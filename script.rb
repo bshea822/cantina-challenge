@@ -8,7 +8,7 @@ json = JSON.parse(json_file)
 @classNames = {}
 @identifiers = {}
 
-def self.parse_json(data)
+def parse_json(data)
   data.each do |key, value|
     if key === 'class'
       if @classes[value]
