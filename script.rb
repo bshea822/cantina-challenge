@@ -74,7 +74,7 @@ while input != 'exit' do
           puts output
           puts "\n\n"
         end
-        puts "Total Views Found: #{@classNames[input.delete '@'].length}"
+        puts "Total Views Found: #{@classNames[input.delete '.'].length}"
       else
         puts "That selector is not found, please check your spelling and try again."
       end
@@ -86,7 +86,7 @@ while input != 'exit' do
           puts output
           puts "\n\n"
         end
-        puts "Total Views Found: #{@identifiers[input.delete '@'].length}"
+        puts "Total Views Found: #{@identifiers[input.delete '#'].length}"
       else
         puts "That selector is not found, please check your spelling and try again."
       end
