@@ -62,28 +62,31 @@ while input != 'exit' do
           puts output
           puts "\n\n"
         end
+        puts "Total Views Found: #{@classes[input.delete '@'].length}"
       else
         puts "That selector is not found, please check your spelling and try again."
       end
     end
 
     if input[0] === '.'
-      if @classes[input.delete '.'] != nil
+      if @classNames[input.delete '.'] != nil
         @classNames[input.delete '.'].each do |output|
           puts output
           puts "\n\n"
         end
+        puts "Total Views Found: #{@classNames[input.delete '@'].length}"
       else
         puts "That selector is not found, please check your spelling and try again."
       end
     end
 
     if input[0] === '#'
-      if @classes[input.delete '#'] != nil
+      if @identifiers[input.delete '#'] != nil
         @identifiers[input.delete '#'].each do |output|
           puts output
           puts "\n\n"
         end
+        puts "Total Views Found: #{@identifiers[input.delete '@'].length}"
       else
         puts "That selector is not found, please check your spelling and try again."
       end
